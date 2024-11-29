@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-java@v2.4.0
         with:
           java-version: '11'
-          distribution: 'adoptopenjdk'  # Use AdoptOpenJDK distribution
-          java-package: 'jdk'  # Ensure JDK is being installed
+          distribution: 'openjdk' 
+          java-package: 'jdk'  
           architecture: 'x64'
 
       - name: Build with Maven
