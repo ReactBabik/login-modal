@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-java@v2.4.0
         with:
           java-version: '11'
-          distribution: 'openjdk' 
-          java-package: 'jdk'  
+          distribution: 'temurin'   # Use 'temurin' or 'adoptopenjdk' instead of 'openjdk'
+          java-package: 'jdk'
           architecture: 'x64'
 
       - name: Build with Maven
