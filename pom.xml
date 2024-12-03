@@ -58,7 +58,7 @@
     </dependency>
   </dependencies>
 
-  <!-- Maven plugins -->
+  <!-- Combine both <build> sections -->
   <build>
     <plugins>
       <!-- Maven Surefire plugin for running unit tests -->
@@ -72,12 +72,8 @@
           </includes>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
 
-  <!-- Plugin for creating JAR file -->
-  <build>
-    <plugins>
+      <!-- Plugin for creating JAR file -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
